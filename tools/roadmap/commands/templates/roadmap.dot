@@ -1,4 +1,4 @@
-{{- /*gotype: github.com/SierraSoftworks/roadmap.Roadmap*/ -}}
+{{- /*gotype: github.com/fnxpt/roadmap.Roadmap*/ -}}
 {{- $root := . -}}
 
 digraph Roadmap {
@@ -19,7 +19,7 @@ digraph Roadmap {
   {{- range $index, $milestone := .Milestones -}}
   {{- with $milestone -}}
   {{- $id := .ID }}
-  
+
     {{ $id }}[label={{ .Title | json }},tooltip={{ .Description | json }}];
   {{- if gt $index 0 }}
     {{ (index $root.Milestones (add $index -1)).ID }} -> {{ $id }};

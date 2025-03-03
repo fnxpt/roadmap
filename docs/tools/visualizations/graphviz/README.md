@@ -18,7 +18,7 @@ available to run.
 
 ```sh
 # This installs the roadmap tool in your Go binaries folder.
-go install github.com/SierraSoftworks/roadmap/tools/roadmap@latest
+go install github.com/fnxpt/roadmap/tools/roadmap@latest
 ```
 
 ### Conversion
@@ -68,10 +68,10 @@ digraph Roadmap {
 	rank=same;
 
 	start[label="Start",shape="house",color="",tooltip="This is the start of your roadmap."];
-  
+
     Build_the_Team_6ad93544[label="Build the Team",tooltip="We don't yet have anyone, that's not gonna work..."];
     start -> Build_the_Team_6ad93544;
-  
+
     Finish_the_Project_d134c72c[label="Finish the Project",tooltip="We don't need other milestones, do we?"];
     Build_the_Team_6ad93544 -> Finish_the_Project_d134c72c;
   }
@@ -88,15 +88,15 @@ digraph Roadmap {
 	# Deliverables for Build_the_Team_6ad93544
 	Team_Lead_e3b0c442[label="Team Lead",tooltip="This person needs to know enough about this domain to be able to run with the project.",color="grey",labelhref=""];
 	Team_Lead_e3b0c442 -> Build_the_Team_6ad93544;
-	
+
 	Senior_Engineer_1_e3b0c442[label="Senior Engineer 1",tooltip="",color="grey",labelhref=""];
 	Senior_Engineer_1_e3b0c442 -> Build_the_Team_6ad93544;
-	
+
 	Intern_1__50_e3b0c442[label="Intern 1..50",tooltip="This should be cheaper than hiring a proper team (right?).",color="grey",labelhref=""];
 	Intern_1__50_e3b0c442 -> Build_the_Team_6ad93544;
-	
+
   }
-  
+
 
   subgraph cluster_Finish_the_Project_d134c72c {
 	label="Finish the Project";
@@ -107,18 +107,18 @@ digraph Roadmap {
 	# Deliverables for Finish_the_Project_d134c72c
 	MVP_e3b0c442[label="MVP",tooltip="Who needs a polished product? Let's just ship the MVP and call it done.",color="grey",labelhref=""];
 	MVP_e3b0c442 -> Finish_the_Project_d134c72c;
-	
+
 	Marketing_e3b0c442[label="Marketing",tooltip="",color="grey",labelhref=""];
 	Marketing_e3b0c442 -> Finish_the_Project_d134c72c;
-	
+
 	VC_Funding_e3b0c442[label="VC Funding",tooltip="",color="grey",labelhref=""];
 	VC_Funding_e3b0c442 -> Finish_the_Project_d134c72c;
-	
+
 	Yacht_ea55167b[label="Yacht",tooltip="",color="grey",labelhref="https://lmgtfy.app/?q=yacht\u0026t=i"];
 	Yacht_ea55167b -> Finish_the_Project_d134c72c;
-	
+
   }
-  
-}  
+
+}
 }
 ```

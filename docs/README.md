@@ -86,5 +86,5 @@ milestones:
 
 
 <ClientOnly>
-    <Contributors repo="SierraSoftworks/roadmap" />
+    <Contributors repo="fnxpt/roadmap" />
 </ClientOnly>

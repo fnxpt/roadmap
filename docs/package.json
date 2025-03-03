@@ -12,14 +12,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SierraSoftworks/roadmap.git"
+    "url": "git+https://github.com/fnxpt/roadmap.git"
   },
   "author": "Benjamin Pannell <contact@sierrasoftworks.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/SierraSoftworks/roadmap/issues"
+    "url": "https://github.com/fnxpt/roadmap/issues"
   },
-  "homepage": "https://github.com/SierraSoftworks/roadmap#readme",
+  "homepage": "https://github.com/fnxpt/roadmap#readme",
   "devDependencies": {
     "@vuepress/plugin-google-analytics": "2.0.0-rc.80",
     "@vuepress/plugin-palette": "2.0.0-rc.0",

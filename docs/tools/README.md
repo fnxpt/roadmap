@@ -18,7 +18,7 @@ Converts your `roadmap.yml` file into a GraphViz DOT format which can be easily 
 SVG, PNG and a range of other formats.
 
 ```sh
-go install github.com/SierraSoftworks/roadmap/tools/roadmap@latest
+go install github.com/fnxpt/roadmap/tools/roadmap@latest
 roadmap render graphviz --in roadmap.yml
 ```
 
@@ -39,7 +39,7 @@ Converts your `roadmap.yml` file into a static HTML file which can be easily vie
 web browsers.
 
 ```sh
-go install github.com/SierraSoftworks/roadmap/tools/roadmap@latest
+go install github.com/fnxpt/roadmap/tools/roadmap@latest
 roadmap render html --in roadmap.yml --out roadmap.html
 ```
 
@@ -48,7 +48,7 @@ Converts your `roadmap.yml` file into a Markdown file which can be rendered by m
 rendering programs.
 
 ```sh
-go install github.com/SierraSoftworks/roadmap/tools/roadmap@latest
+go install github.com/fnxpt/roadmap/tools/roadmap@latest
 
 # Generate a full Markdown file
 roadmap render md --in roadmap.yml --out roadmap.md

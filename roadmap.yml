@@ -1,6 +1,6 @@
 title: '"Road map" Road map'
 description: |
-  This is the planning road map for the [SierraSoftworks/roadmap](https://github.com/SierraSoftworks/roadmap)
+  This is the planning road map for the [fnxpt/roadmap](https://github.com/fnxpt/roadmap)
   project. It acts as both the plan for implementing this tool as well as a demonstration of what a road map
   might look like.
 
@@ -29,7 +29,7 @@ timeline:
 
 objectives:
   - title: We provide a single, universal, schema for high-level planning
-    description: | 
+    description: |
       The goal of this project is, primarily, to provide a single schema that can be used by different
       teams to describe the work they are doing and their future intentions. The usefulness and applicability
       of this schema to real-world problem domains will determine whether anything else we do here is of
@@ -145,7 +145,7 @@ milestones:
           The most important part of this milestone is the development of a web based renderer which can
           present a road map file. This renderer is going to form the basis for our user flows, including
           acting as a realtime preview for the editor and a final output for the repository viewer.
-      
+
       - title: Editor
         state: DONE
         requirement: SHOULD
@@ -153,7 +153,7 @@ milestones:
           Making it easy for people to experiment with Road Map is going to be an important part of getting
           them to use it. Providing an in-page editor which they can toy around with and instantly see results
           is a great place to start.
-      
+
       - title: Repo Viewer
         state: DONE
         requirement: SHOULD

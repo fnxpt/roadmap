@@ -21,7 +21,7 @@ need Go installed on your machine and then you can simply run:
 
 ```powershell
 # Install the tool
-go install github.com/SierraSoftworks/roadmap/tools/roadmap-graphviz@latest
+go install github.com/fnxpt/roadmap/tools/roadmap-graphviz@latest
 
 # Run the tool
 roadmap-graphviz --in my-roadmap.yml -out my-roadmap.dot

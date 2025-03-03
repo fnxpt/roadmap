@@ -1,4 +1,4 @@
-module github.com/SierraSoftworks/roadmap
+module github.com/fnxpt/roadmap
 
 go 1.16
 

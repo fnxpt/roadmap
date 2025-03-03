@@ -81,7 +81,7 @@ it. This can be done using our [Markdown tool](/tools/documentation/markdown/REA
 
 
 ```powershell
-go install github.com/SierraSoftworks/roadmap/tools/roadmap@latest
+go install github.com/fnxpt/roadmap/tools/roadmap@latest
 
 roadmap render markdown --in my-roadmap.yml
 ```
@@ -97,7 +97,7 @@ in DOT format. You can then render this diagram with GraphViz, or view it in an 
 [GraphViz Online](https://dreampuf.github.io/GraphvizOnline).
 
 ```powershell
-go install github.com/SierraSoftworks/roadmap/tools/roadmap@latest
+go install github.com/fnxpt/roadmap/tools/roadmap@latest
 
 roadmap render graphviz --in my-roadmap.yml
 ```

@@ -1,4 +1,4 @@
-{{- /*gotype: github.com/SierraSoftworks/roadmap.Roadmap*/ -}}
+{{- /*gotype: github.com/fnxpt/roadmap.Roadmap*/ -}}
 {{ $root := . -}}
 ---
 {{- range $key, $value := metadata }}

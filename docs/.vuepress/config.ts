@@ -37,7 +37,7 @@ export default defineUserConfig({
     logo: 'https://cdn.sierrasoftworks.com/logos/icon.png',
     logoDark: 'https://cdn.sierrasoftworks.com/logos/icon_light.png',
 
-    repo: "SierraSoftworks/roadmap",
+    repo: "fnxpt/roadmap",
     docsDir: 'docs',
     navbar: [
       {
@@ -50,7 +50,7 @@ export default defineUserConfig({
       },
       {
         text: "Report an Issue",
-        link: "https://github.com/SierraSoftworks/roadmap/issues/new",
+        link: "https://github.com/fnxpt/roadmap/issues/new",
         target: "_blank"
       }
     ],

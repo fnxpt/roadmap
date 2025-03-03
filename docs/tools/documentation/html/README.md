@@ -14,7 +14,7 @@ available to run.
 
 ```sh
 # This installs the roadmap tool in your Go binaries folder.
-go install github.com/SierraSoftworks/roadmap/tools/roadmap@latest
+go install github.com/fnxpt/roadmap/tools/roadmap@latest
 ```
 
 ### Conversion
@@ -35,7 +35,7 @@ roadmap render html --in roadmap.yml --out roadmap.html
 :::
 ::::
 
-### Serving 
+### Serving
 To preview your roadmap document in your browser while you work on it, you can run the following command. Every time you save changes made to your roadmap file, the HTML representation will update to reflect those changes which can speed up your roadmap development!
 
 ```sh

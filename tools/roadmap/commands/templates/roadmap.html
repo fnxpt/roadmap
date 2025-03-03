@@ -1,4 +1,4 @@
-{{- /*gotype: github.com/SierraSoftworks/roadmap.Roadmap*/ -}}
+{{- /*gotype: github.com/fnxpt/roadmap.Roadmap*/ -}}
 {{ $root := . -}}
 <!DOCTYPE html>
 <html lang="en">
@@ -29,7 +29,7 @@
                 </div>
                 {{ end }}
             </div>
-            
+
             {{ .Description | markdown }}
         </section>
 
@@ -45,7 +45,7 @@
                 {{ end }}
             </div>
         </section>
-        
+
         <section role="main">
             <h2 class="section-title">Objectives</h2>
             {{ range .Objectives }}
@@ -61,7 +61,7 @@
                     <h3 class="timeline-item__title section-subtitle">{{ $m.Title }}</h3>
                     <div class="timeline-item_description">
                         {{ .Description | markdown }}
-                    
+
                         {{ range $m.Deliverables }}
                         <div id="milestone-{{ $m.ID }}-deliverable-{{ .ID }}" class="card card-{{ .State }}">
                             <h4 class="card-title">
@@ -82,6 +82,6 @@
             </div>
         </section>
     </section>
-    
+
 </body>
 </html>

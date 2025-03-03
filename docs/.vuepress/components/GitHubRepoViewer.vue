@@ -6,7 +6,7 @@
       <p>Enter the name of a repository you wish to view the road map for.</p>
 
       <label>
-        <input type="text" v-model="repo" placeholder="SierraSoftworks/roadmap">
+        <input type="text" v-model="repo" placeholder="fnxpt/roadmap">
       </label>
     </div>
   </div>
