@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/SierraSoftworks/roadmap"
-	"github.com/SierraSoftworks/roadmap/tools/roadmap/commands/linting"
 	"github.com/fatih/color"
+	"github.com/fnxpt/roadmap"
+	"github.com/fnxpt/roadmap/tools/roadmap/commands/linting"
 	"github.com/urfave/cli/v2"
 )
 

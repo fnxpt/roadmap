@@ -4,7 +4,7 @@ import (
 	"log"
 	"os"
 
-	"github.com/SierraSoftworks/roadmap/tools/roadmap/commands"
+	"github.com/fnxpt/roadmap/tools/roadmap/commands"
 )
 
 func main() {

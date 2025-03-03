@@ -7,7 +7,7 @@ import (
 	"log"
 	"text/template"
 
-	"github.com/SierraSoftworks/roadmap"
+	"github.com/fnxpt/roadmap"
 	"github.com/pkg/errors"
 )
 

@@ -4,7 +4,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/SierraSoftworks/roadmap"
+	"github.com/fnxpt/roadmap"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

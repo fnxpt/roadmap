@@ -1,6 +1,6 @@
 package linting
 
-import "github.com/SierraSoftworks/roadmap"
+import "github.com/fnxpt/roadmap"
 
 var rules = []Rule{}
 
@@ -20,13 +20,13 @@ func (r *rule) Validate(rm *roadmap.Roadmap) []Issue {
 	return r.fn(rm)
 }
 
-/// RuleFromFunction creates a new rule implementation based on the provided function.
+// / RuleFromFunction creates a new rule implementation based on the provided function.
 func RuleFromFunction(fn func(*roadmap.Roadmap) []Issue) Rule {
 	return &rule{fn}
 }
 
-/// Validate will run all of the registered rules against the provided road map and return
-/// a list of issues that were found.
+// / Validate will run all of the registered rules against the provided road map and return
+// / a list of issues that were found.
 func Validate(rm *roadmap.Roadmap) []Issue {
 	var issues []Issue
 

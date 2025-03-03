@@ -3,7 +3,7 @@ package linting
 import (
 	"fmt"
 
-	"github.com/SierraSoftworks/roadmap"
+	"github.com/fnxpt/roadmap"
 )
 
 func init() {

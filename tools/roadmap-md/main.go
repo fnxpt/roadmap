@@ -5,7 +5,7 @@ import (
 	"log"
 	"os"
 
-	"github.com/SierraSoftworks/roadmap"
+	"github.com/fnxpt/roadmap"
 	"github.com/urfave/cli/v2"
 )
 
@@ -53,15 +53,13 @@ func main() {
 
 			template := roadmapTemplateAdvanced
 
-			if len(c.String("template")) > 0 {
+			if c.String("template") != "" {
 				t, err := os.ReadFile(c.String("template"))
 				if err != nil {
 					return err
 				}
 				template = string(t)
-			}
-
-			if c.Bool("simple") {
+			} else if c.Bool("simple") {
 				template = roadmapTemplateBasic
 			}
 
