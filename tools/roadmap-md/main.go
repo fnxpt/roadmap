@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"io/ioutil"
 	"log"
 	"os"
 
@@ -33,9 +32,16 @@ func main() {
 				Name:  "simple",
 				Usage: "Emits simplified Markdown for maximum compatibility.",
 			},
+			&cli.StringFlag{
+				Name:      "template",
+				Aliases:   []string{"temp"},
+				Usage:     "The input template file.",
+				Required:  false,
+				TakesFile: true,
+			},
 		},
 		Action: func(c *cli.Context) error {
-			f, err := ioutil.ReadFile(c.String("input"))
+			f, err := os.ReadFile(c.String("input"))
 			if err != nil {
 				return err
 			}
@@ -46,6 +52,15 @@ func main() {
 			}
 
 			template := roadmapTemplateAdvanced
+
+			if len(c.String("template")) > 0 {
+				t, err := os.ReadFile(c.String("template"))
+				if err != nil {
+					return err
+				}
+				template = string(t)
+			}
+
 			if c.Bool("simple") {
 				template = roadmapTemplateBasic
 			}
@@ -56,7 +71,7 @@ func main() {
 			}
 
 			if c.String("output") != "" {
-				return ioutil.WriteFile(c.String("output"), []byte(dot), os.ModePerm)
+				return os.WriteFile(c.String("output"), []byte(dot), os.ModePerm)
 			} else {
 				_, err := fmt.Println(dot)
 				return err
